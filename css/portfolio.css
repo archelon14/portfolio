@@ -1,0 +1,25 @@
+body {
+  margin: 30px;
+}
+
+.underline {
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.underline:hover {
+  border-bottom: 3px solid #999;
+  padding-bottom: 10px;
+}
+
+.space {
+  padding: 25px;
+}
+
+.vcenter{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translateX(-25%);
+  transform: translateY(-30%);
+}
