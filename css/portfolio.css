@@ -2,6 +2,10 @@ body {
   margin: 30px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .underline {
   border-bottom: 3px solid #ccc;
   padding-bottom: 10px;
