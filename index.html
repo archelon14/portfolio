@@ -1,50 +1,105 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="author" content="kevin tanner">
-  <title>projects</title>
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/projects.css" rel="stylesheet">
-</head>
-<body>
-  <div class="container-fluid">
-    <div class="panel panel-default space card">
-      <div class="row">
-        <div class="col-xs-12 lead"><a href="http://kevintanner.io/dice" class="underline">dice</a></div>
-        <div class="space"></div>
-        <div class="col-xs-12"><p>The dice app emulates rolling a dice and gives you a random number between 1-6.</p></div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="kevin tanner">
+    <title>kevin tanner</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+  </head>
+  <body style="background: linear-gradient(45deg, #6690df 0%, #66c8df 50%, #42e4ea 100%);">
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">kevin tanner</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a data-popup-open="popup-1" href="#">Contact</a></li>
+                  <li><a href="content/KevinTannerResume.pdf" target="_blank">Resume</a></li>
+                  <li><a href="http://kevintanner.io">Home</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="cover"><h1>My Projects</h1>
+            <p class="lead">
+              <a href="http://kevintanner.io/dice">dice</a>:<br/>
+              The dice app emulates rolling a dice and gives you a random number between 1-6.<br /><br />
+              <a href="http://kevintanner.io/quote">quote</a>:<br/>
+              The quote app generates a random quote from an object and allows you to tweet the quote.<br /><br />
+              <a href="http://kevintanner.io/tribute">tribute</a>:<br/>
+              The tribute page displays some basic design while giving some history on my favorite topic. Coffee.<br /><br />
+              <a href="http://kevintanner.io/weather">weather</a>:<br/>
+              The weather app requests your location to find where you are and retrieve the weather from an API.<br /><br />
+            </br/>
+            </p>
+
+            <div class="popup" data-popup="popup-1">
+              <div class="popup-inner">
+                  <h2>Wow! This is Awesome! (Popup #1)</h2>
+                  <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam. Nulla luctus luctus ipsum at ultricies. Nullam nec velit dui. Nullam sem eros, pulvinar sed pellentesque ac, feugiat et turpis. Donec gravida ipsum cursus massa malesuada tincidunt. Nullam finibus nunc mauris, quis semper neque ultrices in. Ut ac risus eget eros imperdiet posuere nec eu lectus.</p>
+                  <p><a data-popup-close="popup-1" href="#">Close</a></p>
+                  <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+              </div>
+            </div>
+          </div>
+          <br/>
+          <div class="mastfoot">
+            <div class="inner">
+              <p>
+                <a id="twit" href="http://twitter.com/oxfrdman"><img src="img/twit.png" alt="twit" width="28px"/></a>&nbsp;&nbsp;&nbsp;
+                <a id="inst" href="http://instagram.com/oxfrdman"><img src="img/inst.png" alt="inst" width="28px"/></a>&nbsp;&nbsp;&nbsp;
+                <a id="pin" href="http://pinterest.com/oxfrdman"><img src="img/pin.png" alt="pin" width="28px"/></a>&nbsp;&nbsp;&nbsp;
+                <a id="git" href="http://github.com/archelon14"><img src="img/git.png" alt="git" width="28px"/></a>&nbsp;&nbsp;&nbsp;
+                <a id="pay" href="http://paypal.me/kevintanner"><img src="img/pay.png" alt="pay" width="24px"/></a>&nbsp;&nbsp;&nbsp;
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12 lead"><a href="http://kevintanner.io/quote" class="underline">quote</a></div>
-        <div class="space"></div>
-        <div class="col-xs-12"><p>The quote app generates a random quote from an object and allows you to tweet the quote.</p></div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 lead"><a href="http://kevintanner.io/tribute" class="underline">tribute</a></div>
-        <div class="space"></div>
-        <div class="col-xs-12"><p>The tribute page displays some basic design while giving some history on my favorite topic. Coffee.</p></div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 lead"><a href="http://kevintanner.io/weather" class="underline">weather</a></div>
-        <div class="space"></div>
-        <div class="col-xs-12"><p>The weather app requests your location to find where you are and retrieve the weather from an API.</p></div>
-      </div>
-      <div class="space"></div>
-      <div class="space"></div>
-      <p><--<a href="http://kevintanner.io"> home</a></p>
     </div>
-  </div>
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="js/bootstrap.min.js"></script>
-</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        //----- OPEN
+        $('[data-popup-open]').on('click', function(e)  {
+            var targeted_popup_class = jQuery(this).attr('data-popup-open');
+            $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+
+            e.preventDefault();
+        });
+
+        //----- CLOSE
+        $('[data-popup-close]').on('click', function(e)  {
+            var targeted_popup_class = jQuery(this).attr('data-popup-close');
+            $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+
+            e.preventDefault();
+        });
+      });
+    </script>
+    <!-- Google Analytics tracking -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-55362070-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
 </html>

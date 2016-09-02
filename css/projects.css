@@ -1,41 +1,244 @@
-body {
-  margin: 30px;
-}
-
+/* Links */
+a,
+a:focus,
 a:hover {
-  text-decoration: none;
+  color: #fff;
 }
 
-.card {
-  /*background: linear-gradient(45deg, #7da6cc 0%, #c9eef3 100%);*/
-  /*border-radius: 5px;*/
-  /*box-shadow: 5px 5px 25px #ccc;*/
-  /*color: #113962;*/
-  width: 375px;
-  height: 500px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 
-.underline {
-  border-bottom: 3px solid #ccc;
-  padding-bottom: 10px;
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+body {
+  color: #fff;
+  text-align: center;
+/*  text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
 }
 
-.underline:hover {
-  border-bottom: 3px solid #999;
-  padding-bottom: 10px;
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.space {
-  padding: 25px;
+/* Padding for spacing */
+.inner {
+  padding: 30px;
 }
 
-.vcenter{
-  position: absolute;
-  top: 30%;
-  left: 25%;
-  transform: translateX(-25%);
-  transform: translateY(-30%);
+/*
+ * Header Menu
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+/* Below was added by Kevin */
+.content {
+    position: absolute;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    top: 100px;
+}
+
+.btn:hover .top{
+    top: -100px;
+}
+
+.btn:hover .bottom{
+    top: 0px;
+}
+
+#twit,
+#inst,
+#pin,
+#git,
+#pay {
+    opacity: .5;
+}
+
+#twit:hover,
+#inst:hover,
+#pin:hover,
+#git:hover,
+#pay:hover {
+    opacity: 1;
+}
+
+/* Outer */
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+
+/* Inner */
+.popup-inner {
+    color: #333;
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+
+.popup-close:hover {
+    background:rgba(0,0,0,1);
+    text-decoration:none;
 }
